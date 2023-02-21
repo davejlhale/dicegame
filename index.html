@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/cssReset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Dice Game</title>
+
+</head>
+
+<body >
+
+  <section id="dice-game-container">
+
+
+    <div id="game-title">
+      <h1>Dice Game</h1>
+    </div>
+
+
+    <section id="main-menu">
+      <div class="anim-panel">
+        <div class="dice-placeholder"></div>
+
+        <div class="dice-placeholder"></div>
+      </div>
+      <div id="game-choice-container">
+
+        <a class="button-wood btn-player-choice">1 Player</a>
+        <a class="button-wood btn-player-choice">2 Player</a>
+        <a class="button-wood btn-info" href="#menu-help">Help</a>
+      </div>
+      <div class="anim-panel">
+        <div class="dice-placeholder"></div>
+
+        <div class="dice-placeholder"></div>
+      </div>
+    </section>
+
+    <div id="game-action-container">
+      <div id="game-tally">
+        <h3 class="games-won">1</h3>
+        <h2>Games</h2>
+        <h3 class="games-won">1</h3>
+      </div>
+      <div class="player-panels">
+        <div id="player-1" class="player-panel backed">
+
+          <h3>Score</h3>
+          <h3 id="player-score"> 45</h3>
+          <h3>Dice Score</h3>
+          <h3 id="player-dice-total"> 20 </h3>
+
+          <div class="player-controls">
+            <a class="button-wood player-one-btns fn-roll" id="button-shrink" href="#roll">roll</a>
+            <a class="button-wood player-one-btns fn-hold" id="button-shrink" href="#hold">hold</a>
+          </div>
+        </div>
+        <div id="twoPlayerMenu-container">
+          <div id="playable-dice" class="dice">
+            <div id="dice-one-side-one" class='side one'>
+              <div class="divot one-1"></div>
+            </div>
+            <div id="dice-one-side-two" class='side two'>
+              <div class="divot two-1"></div>
+              <div class="divot two-2"></div>
+            </div>
+            <div id="dice-one-side-three" class='side three'>
+              <div class="divot three-1"></div>
+              <div class="divot three-2"></div>
+              <div class="divot three-3"></div>
+            </div>
+            <div id="dice-one-side-four" class='side four'>
+              <div class="divot four-1"></div>
+              <div class="divot four-2"></div>
+              <div class="divot four-3"></div>
+              <div class="divot four-4"></div>
+            </div>
+            <div id="dice-one-side-five" class='side five'>
+              <div class="divot five-1"></div>
+              <div class="divot five-2"></div>
+              <div class="divot five-3"></div>
+              <div class="divot five-4"></div>
+              <div class="divot five-5"></div>
+            </div>
+            <div id="dice-one-side-six" class='side six'>
+              <div class="divot six-1"></div>
+              <div class="divot six-2"></div>
+              <div class="divot six-3"></div>
+              <div class="divot six-4"></div>
+              <div class="divot six-5"></div>
+              <div class="divot six-6"></div>
+            </div>
+          </div>
+          <!-- end of dice -->
+        </div>
+        <div id="player-2" class="player-panel backed">
+
+          <h3>Score</h3>
+          <h3 id="player-score"> 45</h3>
+          <h3>Dice Score</h3>
+          <h3 id="player-dice-total"> 20 </h3>
+
+          <div class="player-controls">
+            <a class="button-wood player-two-btns fn-roll" id="button-shrink" href="#roll">roll</a>
+            <a class="button-wood player-two-btns fn-hold" id="button-shrink" href="#hold">hold</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="in-game-menu">
+        <a class="button-wood button-shrink" id="btn-restart" href="#restart">Reset</a>
+        <a class="button-wood button-shrink" id="btn-menu" href="#meny">Menu</a>
+        <a class="button-wood button-shrink" id="btn-ingame-help" href="#two-player-help">Help</a>
+
+      </div>
+    </div>
+
+  </section><!-- end dice game container -->
+
+  <div id="one-player-help" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <h3>One Player Rules</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus autem sequi
+          exercitationem quae praesentium consequatur eos, illum perferendis voluptatibus dolor iste
+          distinctio voluptatum cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          eius est asperiores vel ratione aliquam quaerat earum repudiandae amet esse repellendus ad quam
+          numquam adipisci alias! Nemo nostrum soluta minima.</p>
+          Lorem ipsum dolornecessitatibus. Aspernatur impedit vel odio!
+
+      </div>
+    </div>
+  </div>
+
+  <div id="two-player-help" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <h3>Two Player Rules</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus autem sequi
+          exercitationem quae praesentium consequatur eos, illum perferendis voluptatibus dolor iste
+          distinctio voluptatum cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          eius est asperiores vel ratione aliquam quaerat earum repudiandae amet esse repellendus ad quam
+          numquam adipisci alias! Nemo nostrum soluta minima.</p>
+        Lorem ipsum dolornecessitatibus. Aspernatur impedit vel odio!
+
+      </div>
+    </div>
+  </div>
+
+  <div id="menu-help" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+
+        <h3>One Player Rules</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus autem sequi
+          exercitationem quae praesentium consequatur eos, illum perferendis voluptatibus dolor iste
+          distinctio voluptatum cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          eius est asperiores vel ratione aliquam quaerat earum repudiandae amet esse repellendus ad quam
+          numquam adipisci alias! Nemo nostrum soluta minima.</p>
+        Lorem ipsum dolornecessitatibus. Aspernatur impedit vel odio!
+        <h3>Two Player Rules</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores vel ratione aliquam
+        quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo nostrum soluta
+        minima.
+        Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores vel ratione
+        aliquam quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo nostrum
+        soluta minima.
+        Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores vel ratione
+        aliquam quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo nostrum
+        soluta minima.
+        Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores vel ratione
+        aliquam quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo nostrum
+        soluta minima.
+        Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores vel ratione
+        aliquam quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo nostrum
+        soluta minima.
+        Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eius est asperiores
+        vel ratione aliquam quaerat earum repudiandae amet esse repellendus ad quam numquam adipisci alias! Nemo
+        nostrum soluta minima.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores labore inventore corrupti
+        nisi, rerum provident voluptatibus, maiores laudantium odio modi at minus! Blanditiis est, totam eum eos
+        explicabo qui.gh
+      </div>
+    </div>
+
+  </div>
+  <!-- <script src="./app.js"></script> -->
+  <script src="./scripts/dicegame.js"></script>
+ 
+</body>
+
+</html>
